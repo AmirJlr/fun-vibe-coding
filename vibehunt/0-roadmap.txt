@@ -1,0 +1,33 @@
+1. choose rules from:
+ https://cursor.directory/
+
+
+2. add Convex cursor rule
+2.1. Convex MCP server instructions
+2.2. add Convex doc
+
+
+3. add PRD(Product Requirement Descriprion) and use it:
+ Create an app with the following PRD specification.
+ I have attached the look and feel for home page and detail page as images.
+
+
+4. Clerk
+add clerk secret key to .env.local
+
+
+----------------------------------------------------------------------------
+Add webhook if needed:
+Endpoint URL=
+Convex -> Urls & Deploy Key -> HTTP Actions URL (https://... .site)
++
+/webhook/clerk
+
++ user_created, user_updated Actions ======> Key
+
+.env.local ===> CLERK_WEBHOOK_SECRET = Key
+----------------------------------------------------------------------------
+
+RUN THE APP : 
+$ npx convex dev
+$ npm run dev
